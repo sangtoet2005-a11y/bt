@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Exercise 7 - Cards Columns</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .car-img-wrapper {
+            padding: 15px 15px 0 15px; /* Tạo khoảng trống xung quanh ảnh */
+        }
+        .car-img-wrapper img {
+            background-color: white;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            /* Placeholder SVG để bạn có thể xem được cấu trúc ngay khi không có ảnh */
+            content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" viewBox="0 0 400 250"><rect width="100%" height="100%" fill="%23ffffff"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-size="24" fill="%23666">Car Image</text></svg>');
+        }
+        
+        /* Tinh chỉnh viền bao quanh toàn bộ container giống ảnh mẫu */
+        .page-wrapper {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container page-wrapper">
+        <h2 class="mb-4">Cards Columns</h2>
+        
+        <!-- Sử dụng Grid System để chia 3 cột -->
+        <div class="row row-cols-1 row-cols-md-3 g-3">
+            
+            <!-- Card 1 (Xanh) -->
+            <div class="col">
+                <div class="card h-100 border-0 rounded-1" style="background-color: #3b82f6;">
+                    <div class="car-img-wrapper">
+                        <!-- Thay thế src bằng đường dẫn thật của ảnh ô tô -->
+                        <img src="car.jpg" class="card-img-top border-0" alt="Car">
+                    </div>
+                    <div class="card-body text-center p-2 pb-3">
+                        <p class="card-text text-dark m-0">Some text inside the first card</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 2 (Vàng) -->
+            <div class="col">
+                <div class="card h-100 border-0 rounded-1" style="background-color: #facc15;">
+                    <div class="car-img-wrapper">
+                        <img src="car.jpg" class="card-img-top border-0" alt="Car">
+                    </div>
+                    <div class="card-body text-center p-2 pb-3">
+                        <p class="card-text text-dark m-0">Some text inside the first card</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card 3 (Đỏ) -->
+            <div class="col">
+                <div class="card h-100 border-0 rounded-1" style="background-color: #ef4444;">
+                    <div class="car-img-wrapper">
+                        <img src="car.jpg" class="card-img-top border-0" alt="Car">
+                    </div>
+                    <div class="card-body text-center p-2 pb-3">
+                        <p class="card-text text-dark m-0">Some text inside the first card</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
